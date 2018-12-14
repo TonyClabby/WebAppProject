@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+    <h1>Comments Page</h1>
+        <div class="grid-container">
+            <% indOne.forEach(function(comments) { %>
+            <form  method="post"> 
+            
+                    <%= comments.id %><br><br>
+                    <label for="username">Username</label>
+                    <input name="username" type="text" value="<%= comments.username%>", required/>
+                  
+                    <label for="comment">Comment</label>
+                    <input name="comment" type="text" value="<%= comments.comment%>", required />
+                    
+                    <button class="button">Edit Me</button>
+                    
+                    <% }); %>
+                                        
+            
+            </form>
+        </div>
+<% include ../partials/footer %>

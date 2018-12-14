@@ -1,0 +1,60 @@
+<% include ../partials/header %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="row">
+    <% house.forEach(function(house) { %>
+                
+                <div class="item">
+                    <%= house.id %><br>
+                    
+                    <p id="button<%= house.id %>">Show description</p>
+                    <div id="<%= house.id %>"  style="display:none;">
+                    <%= house.Description %><br>
+                    <%= house.Type %><br>
+                    <%= house.Address %><br>
+                    <%= house.Contact %><br>
+                    <%= house.Email %><br>
+                    <%= house.Number %><br>
+                    
+                    </div>
+                    
+                    
+                    <img src="/<%= house.Image %>" width=400px height=300px /><br>
+                    
+                    <br><button class="button" id="button1<%= house.id%>">Buy</button>
+                    
+                 </div>
+                    <div  id="confirm<%= house.id%>"  style="display:none;">
+	                  <p>Are you sure you want to buy this house?</P>
+	                  <a href="/deletehouse/<%= house.id%>" class="button">Buy</a>
+                    </div>
+  <script>
+  
+//-----------------------------
+// Buy confirmation
+$(document).ready(function(){
+    $("#button1<%= house.id %>").click(function(){
+        $("#confirm<%= house.id %>").slideDown(1000);
+        
+    });
+});
+
+//------------------------------
+// Show more description button
+
+$(document).ready(function(){
+    $("#button<%= house.id %>").click(function(){
+        $("#<%= house.id %>").slideDown(1000);
+        
+    });
+});
+
+
+</script>
+              
+         <% }); %>
+  </div>
+  
+
+
+<% include ../partials/footer %>

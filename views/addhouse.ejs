@@ -1,0 +1,47 @@
+  <% include ../partials/header %>
+
+<div class="row2">
+  <h1>Welcome to the add homes page  <br>
+  <div class="grid-container">
+        
+            <form accept-charset="UTF-8" action="/addhouse" method="post">    
+                <div class="item">
+                    
+                    <label for="Type">Type</label>
+                    <input name="Type" type="text" placeholder="What type of house is it." , required , pattern="[a-z]"/>
+                  
+                    <label for="Description">Description</label>
+                    <input name="Description" type="text" placeholder="Enter a comment", required , pattern="[a-z0-9]+[a-z0-9]"/>
+                  
+                    <label for="Address">Address</label> 
+                    <input name="Address" type="text" placeholder="Enter the address.", required , pattern="[a-z0-9]+[a-z0-9]"/>
+                    
+                    <label for="Contact">Seller</label> 
+                    <input name="Contact" type="text" placeholder="Enter a name", required , pattern="[a-z0-9]+[a-z0-9]"/>
+                    
+                    <label for="phoneNum">Contact number</label> 
+                    <input name="phoneNum" type="text" placeholder="Enter a number.", required , pattern="[a-z0-9]+[a-z0-9]"/>
+                    
+                    <label for="Email">Contact's Email</label> 
+                    <input name="Email" type="text" placeholder="Submit your email", required, pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                   
+                    <label for="Image">Title of image you uploaded.</label> 
+                    <input name="Image" type="text" placeholder="example.jpg">
+                   
+                    <button class="button">Add</button>
+                    
+                    </div>
+              </form>
+      
+         
+         
+    </div>
+  </h1>
+</div>
+
+
+
+
+
+
+<% include ../partials/footer %>

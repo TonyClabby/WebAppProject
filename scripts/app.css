@@ -1,0 +1,195 @@
+body {
+    background-color: #CAE4DB;
+    background-size:100% 100%;
+    text-align: center;
+    min-height:900px; /* we will remove this later */
+}
+
+
+/*Header start*/
+.topnav {
+    background-color: #ffd633;
+    overflow: auto;
+}
+
+.topnav a {
+    color: #00303F;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 32px;
+    
+}
+
+.topnav a:hover {
+    background-color: #7A9D96;
+    color: #00303F;
+}
+/*Header end*/
+
+
+h1 {
+    color: #00303F;
+}
+
+label {
+    color: #00303F;
+}
+
+.button {
+    background-color: #00303F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: #00303F;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
+
+
+/*Rows start*/
+.row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: -webkit-flex;
+    display: inline-block;
+    width: 100%;
+}
+
+.row2 {
+    display: -webkit-flex;
+    display: inline-block;
+}
+
+
+.item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  min-width: 40%;
+  text-align: center;
+  padding: 5px 0;
+  display: inline-block;
+ 
+}
+/*Rows end*/
+
+
+/*Add home page start*/
+/* Style for form */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formHold {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width:90%;
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  min-width: 40%;
+  text-align: center;
+  padding: 5px 0;
+  display: inline-block;
+ 
+}
+/*Add home page end*/
+
+
+/*Footer start*/
+.footer {
+    background-color: #DCAE1D;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    color: #000000;
+}
+/*Footer end*/
+
+.normal {
+    color: #f40202;
+    background-image: url('vintage.jpg');
+     background-color: #00303F;
+      background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+     padding:5px;
+     height: 30%;
+     width:30%;
+     margin-left:10px;
+     margin-bottom:10px;
+}
+
+.normal2 {
+    color: #f40202;
+    background-image: url('shutters.jpg');
+    background-color: #00303F;
+    background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+     padding:5px;
+     height: 30%;
+     width:30%;
+     margin-left:10px;
+     margin-bottom:10px;
+}
+
+
+.large {
+    color: #000000;
+    background-image: url('toyHouse.jpg');
+     background-color: #00303F;
+      background-repeat:no-repeat;
+    background-size:cover;
+    float: left;
+    padding:5px;
+    margin-left:10px;
+    height: 30%;
+    width: 30%;
+}
+
+

@@ -1,0 +1,16 @@
+<% include ../partials/header %>
+
+  <div class="row">
+    <% house.forEach(function(house) { %>
+                
+                <div class="item">
+                    <%= house.id %><br>
+                    <%= house.Comment %><br>
+                    <a href="/edithouse/<%= house.id%>" class="button">Edit</a>
+                    </div>
+
+              
+         <% }); %>
+  </div>
+
+<% include ../partials/footer %>

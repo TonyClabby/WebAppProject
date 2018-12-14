@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <div class="row">
+    <% house.forEach(function(house) { %>
+                
+                <div class="item"><br>
+                    <%= house.id %><br>
+                    
+                    <p id="button<%= house.id %>">Show description</p>
+                    <div id="<%= house.id %>"  style="display:none;">
+                    <%= house.Description %><br>
+                    <%= house.Type %><br>
+                    <%= house.Address %><br>
+                    <%= house.Contact %><br>
+                    <%= house.Email %><br>
+                    <%= house.Number %><br>
+                    
+                    </div>
+                    <img src="/<%= house.Image %>" width=400px height=300px /><br>
+                    <a href="/edithouse/<%= house.id%>" class="button">Edit</a><br>
+                    </div>
+                    
+<script>
+//Show more description
+$(document).ready(function(){
+    $("#button<%= house.id %>").click(function(){
+        $("#<%= house.id %>").slideDown(1000);
+        
+    });
+});
+
+</script>
+                    
+                    
+         <% }); %>
+         
+
+         
+         
+  </div>
+
+<% include ../partials/footer %>
+

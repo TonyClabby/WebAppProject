@@ -1,0 +1,19 @@
+  <% include ../partials/header %>
+  
+  <div class="row">
+    <% contact.forEach(function(contacts) { %>
+                
+                <div class="item">
+                    <%= contacts.id %><br>
+                    <%= contacts.name %><br>
+                    <%= contacts.price %><br>
+                    <a href="/editcontacts/<%= contacts.id%>" class="button">Edit</a>
+                    <a href="/deletecontact/<%= contacts.id%>" class="button">Delete</a>
+                    </div>
+
+              
+         <% }); %>
+  </div>
+
+
+<% include ../partials/footer %>

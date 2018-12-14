@@ -1,0 +1,56 @@
+<% include ../partials/header %>
+ <!-- -->
+ <!-- App home page -->
+ 
+ <!-- About section which can be dropped down and then hidden again -->
+ <!-- Button to show content -->
+ <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+ </script>
+ <div  class="grid-container">
+  <!-- Button to hide revealed content-->
+  <a id="show" class="button">About us</a>
+  <br/>
+  <div id="text" class="item" style="display:none">
+  <p>Clabby houses is famed for selling immaculate houses for, like, a million fucking years at this point.</p>
+  <br/>
+  <a id="hide" class="button">show less</a>
+  </div>
+  
+   <script>
+ 
+ $(document).ready(function(){
+  $("#show").click(function(){
+   $("#text").show(2000);
+  });
+ });
+ 
+ $(document).ready(function(){
+  $("#hide").click(function(){
+   $("#text").hide(2000);
+  });
+ });
+ 
+ </script>
+  
+ </div class="grid-container">
+ 
+ 
+ <!--Div for the homelist button -->
+ <div class="grid-container"> 
+  
+ <!-- image plus link to house list-->
+ <a class="large" href="/viewHomes">Houses for sale</a>
+ 
+ 
+ 
+  <!--link to buy house page-->
+  <a class="normal" href="/houses">Buy House</a>
+ 
+ 
+  <!--link to the sell house page-->
+  <a class="normal2"  href="/addhouse">Sell your home</a>
+  
+ <div>
+
+  
+ <% include ../partials/footer %>

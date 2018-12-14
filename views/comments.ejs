@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+    <h1>Comments Page</h1>
+        <div class="grid-container">
+            <% comments.forEach(function(comments) { %>
+            <form accept-charset="UTF-8" action="/addcomment" method="post"> 
+            
+                <div class="item">
+                    
+                    
+                    <br>
+                    <%= comments.username %><br>
+                    <%= comments.comment %><br>
+                    
+                    <a href="/editcomment/<%= comments.id%>" class="button">Edit</a>
+                    
+                    </div>
+                    <% }); %>
+                           
+                
+            </form>
+        </div>
+<% include ../partials/footer %>

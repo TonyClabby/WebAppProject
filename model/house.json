@@ -1,0 +1,60 @@
+[
+    {
+        "Type": "Semi detached",
+        "id": 1,
+        "Description": "This is a very nice house with two bathrooms and a large garden",
+        "Address": "45 spudefield avenue, D13 WI23",
+        "Contact": "Kelly",
+        "Email": "kelly@gmail.com",
+        "Number": "086548535",
+        "Image": "bungalow.jpg"
+    },{
+        "Type": "Semi detached",
+        "id": 2,
+        "Description": "This is a very nice house with two bathrooms and a large garden",
+        "Address": "45 spudefield avenue, D13 WI23",
+        "Contact": "Kelly",
+        "Email": "kelly@gmail.com",
+        "Number": "086548535",
+        "Image": "detached.jpg"
+    },{
+        "Type": "Semi detached",
+        "id": 3,
+        "Description": "This is a very nice house with two bathrooms and a large garden",
+        "Address": "45 spudefield avenue, D13 WI23",
+        "Contact": "Kelly",
+        "Email": "kelly@gmail.com",
+        "Number": "086548535",
+        "Image": "farmhouse.jpg"
+    },
+    {
+        "Type": "Semi detached",
+        "id": 4,
+        "Description": "This is a very nice house with two bathrooms and a large garden",
+        "Address": "45 spudefield avenue, D13 WI23",
+        "Contact": "Kelly",
+        "Email": "kelly@gmail.com",
+        "Number": "086548535",
+        "Image": "holidayhome.jpg"
+    },
+    {
+        "Type": "a",
+        "id": 5,
+        "Description": "asd",
+        "Address": "asd",
+        "phoneNum": "asd",
+        "Email": "asd@asd.com",
+        "Contact": "asd",
+        "Image": "mansion.jpg"
+    },
+    {
+        "Type": "a",
+        "id": 6,
+        "Description": "asd",
+        "Address": "asd",
+        "phoneNum": "12",
+        "Email": "asd@asd.com",
+        "Contact": "asd",
+        "Image": "toyHouse.jpg"
+    }
+]
